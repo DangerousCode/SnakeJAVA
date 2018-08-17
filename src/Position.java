@@ -1,4 +1,4 @@
-public class Position {
+public class Position implements Cloneable {
 
     private int x;
     private int y;
@@ -22,5 +22,17 @@ public class Position {
 
     public void setY(int y) {
         this.y = y;
+    }
+
+    @Override
+    public Position clone(){
+        Position position = null;
+        try {
+            position = (Position) super.clone();
+        }catch (CloneNotSupportedException e){
+            e.printStackTrace();
+        }
+
+        return position;
     }
 }

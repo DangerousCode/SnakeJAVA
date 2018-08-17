@@ -23,6 +23,8 @@ public class Application {
 
             screen.moveSnake();
 
+            screen.drawScr();
+
             collision = screen.checkCollision();
 
             try {

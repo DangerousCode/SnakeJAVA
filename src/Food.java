@@ -24,8 +24,8 @@ public class Food {
         int yRandom = (int) (Math.random() * yDimension);
         Position position = new Position(xRandom, yRandom);
         if (!notDesiredPositions.contains(position)
-                && (xRandom != xDimension || xRandom != -1)
-                && (yRandom != yDimension -1 || yRandom != -1)) {
+                && xRandom != xDimension && xRandom != -1
+                && yRandom != yDimension - 1 && yRandom != -1) {
             return position;
         } else {
             return generateRandomFoodPosition(notDesiredPositions, xDimension, yDimension);

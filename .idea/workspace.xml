@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58590bdd-438f-4f3a-bfc4-778a64e149c2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeJAVA/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SnakeJAVA/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeJAVA/Food.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SnakeJAVA/Food.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeJAVA/Screen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SnakeJAVA/Screen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeJAVA/Snake.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SnakeJAVA/Snake.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Food.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Position.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Screen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Snake.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,10 +25,11 @@
         <counts>
           <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -38,13 +44,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="7365" />
+          <entry key="java" value="8021" />
           <entry key="txt" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7365" />
+          <entry key="JAVA" value="8021" />
           <entry key="PLAIN_TEXT" value="20" />
         </counts>
       </usages-collector>
@@ -52,11 +58,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Snake.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="51">
+              <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,18 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Position.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
+            <state relative-caret-position="357">
               <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-              <folding>
-                <element signature="e#169#170#0" expanded="true" />
-                <element signature="e#193#194#0" expanded="true" />
-                <element signature="e#224#225#0" expanded="true" />
-                <element signature="e#250#251#0" expanded="true" />
-                <element signature="e#275#276#0" expanded="true" />
-                <element signature="e#299#300#0" expanded="true" />
-                <element signature="e#330#331#0" expanded="true" />
-                <element signature="e#356#357#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -86,19 +82,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="149">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Screen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
+            <state relative-caret-position="839">
+              <caret line="114" column="9" lean-forward="true" selection-start-line="114" selection-start-column="9" selection-end-line="114" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#348#349#0" expanded="true" />
+                <element signature="e#376#377#0" expanded="true" />
+                <element signature="e#405#406#0" expanded="true" />
+                <element signature="e#432#433#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
+                <element signature="e#494#495#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Food.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="27" column="61" lean-forward="true" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
+            <state relative-caret-position="308">
+              <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,11 +138,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Snake.java" />
-        <option value="$PROJECT_DIR$/src/Application.java" />
         <option value="$PROJECT_DIR$/src/Position.java" />
-        <option value="$PROJECT_DIR$/src/Food.java" />
         <option value="$PROJECT_DIR$/src/Screen.java" />
+        <option value="$PROJECT_DIR$/src/Food.java" />
+        <option value="$PROJECT_DIR$/src/Application.java" />
+        <option value="$PROJECT_DIR$/src/Snake.java" />
       </list>
     </option>
   </component>
@@ -158,9 +160,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,10 +176,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534506083713" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534859797415" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../MVPCalculator" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -238,7 +240,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14026846" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14228188" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -247,8 +249,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5058651" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5938417" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37243402" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.6480938" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -277,46 +279,47 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Screen.java</url>
-          <line>110</line>
+          <url>file://$PROJECT_DIR$/src/Snake.java</url>
+          <line>77</line>
           <properties />
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Screen.java</url>
-          <line>106</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Screen.java</url>
-          <line>122</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Screen.java</url>
-          <line>152</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Food.java</url>
-          <line>22</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Screen.java</url>
+          <url>file://$PROJECT_DIR$/src/Snake.java</url>
           <line>32</line>
           <properties />
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="screen" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>screen.getFood().getPosition()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>food.getPosition()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>snake.getPositions().get(0)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>screen.getFood()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>snake.getPositions()</expression-string>
         <language-id>JAVA</language-id>
@@ -342,67 +345,53 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>snake.getPositions().subList(1, snake.getPositions().size())</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>snake.getPositions().subList(1, snake.getPositions().size() - 1)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Position.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding>
-            <element signature="e#169#170#0" expanded="true" />
-            <element signature="e#193#194#0" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#250#251#0" expanded="true" />
-            <element signature="e#275#276#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#356#357#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Snake.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Food.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="27" column="61" lean-forward="true" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
+        <state relative-caret-position="308">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Screen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="839">
+          <caret line="114" column="9" lean-forward="true" selection-start-line="114" selection-start-column="9" selection-end-line="114" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="149">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Screen.java">
+    <entry file="file://$PROJECT_DIR$/src/Snake.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
+        <state relative-caret-position="51">
+          <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

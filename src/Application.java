@@ -1,3 +1,5 @@
+import com.sun.org.apache.xerces.internal.impl.dv.xs.YearDV;
+
 public class Application {
 
     private static final int X_DIMENSION = 20;
@@ -15,30 +17,26 @@ public class Application {
 
         boolean winner = false;
         boolean collision = false;
-
         screen.generateFood();
-        screen.drawScr();
+        Snake snake = screen.getSnake();
 
         while(!winner && !collision){
 
-            screen.moveSnake();
-
             screen.drawScr();
 
+            //If snake eats food, generate new food
+            boolean foodEaten = snake.moveSnake(screen.getFood());
+            if(foodEaten){
+                screen.setFood(new Food(snake.getPositions(), X_DIMENSION, Y_DIMENSION));
+            }
             collision = screen.checkCollision();
 
-            try {
-                Thread.sleep(20);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-
         }
-
+        screen.drawScr();
         if (collision) {
-            System.out.println("Puto manco");
+            System.out.println("\nYou lose");
         } else {
-            System.out.println("Mu bien campeon");
+            System.out.println("\nYou win");
         }
 
     }

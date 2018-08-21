@@ -15,9 +15,22 @@ public class Screen {
         this.snake = new Snake(x, y);
     }
 
+
+    public Snake getSnake() {
+        return snake;
+    }
+
+    public Food getFood() {
+        return food;
+    }
+
+    public void setFood(Food food) {
+        this.food = food;
+    }
+
     public void drawScr() {
 
-        for(int i = 0; i < 1000; i++){
+        for (int i = 0; i < 1000; i++) {
             System.out.println();
         }
         for (int i = 0; i < xDimension; i++) {
@@ -92,76 +105,13 @@ public class Screen {
     }
 
     private boolean collisionWithWall() {
-        if (snake.getPositions().get(0).getX() == xDimension - 1
+        if (snake.getPositions().get(0).getX() == xDimension
                 || snake.getPositions().get(0).getY() == yDimension - 1
-                || snake.getPositions().get(0).getX() == 0
-                || snake.getPositions().get(0).getY() == 0) {
+                || snake.getPositions().get(0).getX() == -1
+                || snake.getPositions().get(0).getY() == -1) {
             return true;
         } else {
             return false;
         }
-    }
-
-    public void moveSnake() {
-
-        Scanner scanner = new Scanner(System.in);
-        char direction = scanner.next().charAt(0);
-
-        //Auxiliar list to know old positions
-        List<Position> oldPositions = new ArrayList<>();
-
-        for (Position position :
-                snake.getPositions()) {
-            //We need to clone this thanks to make two separate lists without reference. (sigh)
-            oldPositions.add(position.clone());
-
-        }
-
-        switch (direction) {
-            case 'w':
-                //Move up
-                this.snake.getPositions().get(0).setX(
-                        this.snake.getPositions().get(0).getX() - 1);
-
-                break;
-
-            case 'a':
-
-                //Move left
-                this.snake.getPositions().get(0).setY(
-                        this.snake.getPositions().get(0).getY() - 1);
-
-                break;
-            case 's':
-
-                //Move down
-                this.snake.getPositions().get(0).setX(
-                        this.snake.getPositions().get(0).getX() + 1);
-
-                break;
-            case 'd':
-
-                //Move down
-                this.snake.getPositions().get(0).setY(
-                        this.snake.getPositions().get(0).getY() + 1);
-
-                break;
-        }
-
-        //If next position is equal to apple's position, we need to add head's old position
-        Position headPosition = snake.getPositions().get(0);
-        if (headPosition.getX() == food.getPosition().getX()
-                && headPosition.getY() == food.getPosition().getY()) {
-
-            snake.getPositions().add(1, oldPositions.get(0));
-            generateFood();
-        } else {
-            for (int i = 1; i < snake.getPositions().size(); i++) {
-
-                this.snake.getPositions().set(i, oldPositions.get(i - 1));
-
-            }
-        }
-
     }
 }

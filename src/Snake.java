@@ -6,11 +6,11 @@ public class Snake {
 
     private List<Position> positions;
 
-    public Snake(int x, int y) {
+    public Snake(double x, double y) {
 
 
-        int initPositionX = x / 2;
-        int initPositionY = y / 2;
+        double initPositionX = x / 2;
+        double initPositionY = y / 2;
         positions = new ArrayList<>();
 
         //I initialize this to the middle of the screen
@@ -87,5 +87,9 @@ public class Snake {
         }
 
         return false;
+    }
+
+    public Position getHead(){
+        return this.getPositions().get(0);
     }
 }

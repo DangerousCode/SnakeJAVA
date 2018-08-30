@@ -6,7 +6,7 @@ public class Food {
 
     private Position position;
 
-    public Food(List<Position> positions, int xDimension, int yDimension) {
+    public Food(List<Position> positions, double xDimension, double yDimension) {
         position = generateRandomFoodPosition(positions, xDimension, yDimension);
     }
 
@@ -19,13 +19,13 @@ public class Food {
     }
 
     //Needed to validate that food is not into snake
-    private Position generateRandomFoodPosition(List<Position> notDesiredPositions, int xDimension, int yDimension) {
+    private Position generateRandomFoodPosition(List<Position> notDesiredPositions, double xDimension, double yDimension) {
         int xRandom = (int) (Math.random() * xDimension);
         int yRandom = (int) (Math.random() * yDimension);
         Position position = new Position(xRandom, yRandom);
         if (!notDesiredPositions.contains(position)
-                && xRandom != xDimension && xRandom != -1
-                && yRandom != yDimension - 1 && yRandom != -1) {
+                && xRandom != xDimension && xRandom != 0
+                && yRandom != yDimension - 1 && yRandom != 0) {
             return position;
         } else {
             return generateRandomFoodPosition(notDesiredPositions, xDimension, yDimension);

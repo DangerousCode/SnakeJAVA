@@ -1,18 +1,21 @@
+import javafx.scene.Group;
+import javafx.scene.Scene;
+import javafx.scene.text.Text;
+import javafx.scene.text.TextFlow;
+import javafx.stage.Stage;
+
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Screen {
 
-    int xDimension;
-    int yDimension;
+    Stage stage;
     Snake snake;
     Food food;
 
-    public Screen(int x, int y) {
-        this.xDimension = x;
-        this.yDimension = y;
-        this.snake = new Snake(x, y);
+    public Screen(Stage stage) {
+        this.stage = stage;
+        this.snake = new Snake(stage.getWidth(), stage.getHeight());
     }
 
 
@@ -30,48 +33,35 @@ public class Screen {
 
     public void drawScr() {
 
-        for (int i = 0; i < 1000; i++) {
-            System.out.println();
-        }
-        for (int i = 0; i < xDimension; i++) {
-            System.out.print("/");
-        }
-        System.out.println();
-        for (int x = 0; x < xDimension; x++) {
-            for (int y = 0; y < yDimension; y++) {
-                if (y == 0 || y == yDimension - 1) {
-                    System.out.print("/");
-                }
+        TextFlow snakeBody = new TextFlow();
 
-                if (food.getPosition().getX() == x
-                        && food.getPosition().getY() == y) {
-                    System.out.print("@");
-                } else if (snake.getPositions().get(0).getX() == x
-                        && snake.getPositions().get(0).getY() == y) {
-                    //If position contains snake's head (position 0 of the positions list), print o
-                    System.out.print("o");
-                } else if (coordinatesInSnake(x, y, false)) {
-                    //If position exists into snake's body, print an x
-                    System.out.print("x");
-                } else {
-                    System.out.print(" ");
-                }
+        for (int i = 0; i<snake.getPositions().size(); i++){
+            Position position = snake.getPositions().get(i);
+            Text bodyPart = new Text();
+            if(i == 0){
+                bodyPart.setText("O");
+            } else {
+                bodyPart.setText("X");
             }
-            System.out.println();
+            bodyPart.setX(position.getX());
+            bodyPart.setY(position.getY());
+
+            snakeBody.getChildren().add(bodyPart);
         }
 
-        for (int i = 0; i < xDimension; i++) {
-            System.out.print("/");
-        }
+        Group group = new Group(snakeBody);
+        Scene scene = new Scene(group);
+        stage.setScene(scene);
+        stage.show();
     }
 
     public void generateFood() {
 
-        this.food = new Food(this.snake.getPositions(), xDimension, yDimension);
+        this.food = new Food(this.snake.getPositions(), stage.getWidth(), stage.getHeight());
 
     }
 
-    public boolean coordinatesInSnake(int x, int y, boolean includeHead) {
+    public boolean coordinatesInSnake(double x, double y, boolean includeHead) {
 
         //We need a sublist to compare whole snake or only body.
 
@@ -92,8 +82,8 @@ public class Screen {
 
     public boolean checkCollision() {
 
-        if (coordinatesInSnake(snake.getPositions().get(0).getX(),
-                snake.getPositions().get(0).getY(), false)) {
+        if (coordinatesInSnake(snake.getHead().getX(),
+                snake.getHead().getY(), false)) {
             //Collision with its own body
             return true;
         } else if (collisionWithWall()) {
@@ -105,10 +95,12 @@ public class Screen {
     }
 
     private boolean collisionWithWall() {
-        if (snake.getPositions().get(0).getX() == xDimension
-                || snake.getPositions().get(0).getY() == yDimension - 1
-                || snake.getPositions().get(0).getX() == -1
-                || snake.getPositions().get(0).getY() == -1) {
+
+        Position head = snake.getPositions().get(0);
+        if (snake.getHead().getX() == stage.getWidth()
+                || snake.getHead().getY() == stage.getHeight()
+                || snake.getHead().getX() == 0
+                || snake.getHead().getY() == 0) {
             return true;
         } else {
             return false;
